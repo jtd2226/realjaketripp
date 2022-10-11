@@ -1,23 +1,41 @@
 import {TechName} from './Tech'
-import colorGridScreenshot from 'images/screenshots/colorgrid.png'
-import quickcopyScreenshot from 'images/screenshots/quickcopy.png'
-import shimbergScreenshot from 'images/screenshots/shimberg.png'
-import clearinghouseScreenshot from 'images/screenshots/clearinghouse.png'
-import elderdataScreenshot from 'images/screenshots/elderdata.png'
-import distillrScreenshot from 'images/screenshots/distillr.png'
-import musicmasterScreenshot from 'images/screenshots/musicmaster.png'
-import expensifyScreenshot from 'images/screenshots/expensify.jpg'
-import hairbyfranciscoScreenshot from 'images/screenshots/hairbyfrancisco.jpg'
-import asoftodayScreenshot from 'images/screenshots/asoftoday.png'
-import saccScreenshot from 'images/screenshots/sacc.png'
-import chatScreenshot from 'images/screenshots/chat.png'
-import yelpcampScreenshot from 'images/screenshots/yelpcamp.png'
-import calculatorScreenshot from 'images/screenshots/calculator.png'
-import seasonalScreenshot from 'images/screenshots/seasonal.png'
-import tictactoeScreenshot from 'images/screenshots/tictactoe.png'
-import colorconversionScreenshot from 'images/screenshots/colorconversion.png'
-import kokolunchboxScreenshot from 'images/screenshots/kokolunchbox.png'
-import {StaticImageData} from 'next/image'
+// import colorGridScreenshot from 'images/screenshots/colorgrid.png'
+// import quickcopyScreenshot from 'images/screenshots/quickcopy.png'
+// import shimbergScreenshot from 'images/screenshots/shimberg.png'
+// import clearinghouseScreenshot from 'images/screenshots/clearinghouse.png'
+// import elderdataScreenshot from 'images/screenshots/elderdata.png'
+// import distillrScreenshot from 'images/screenshots/distillr.png'
+// import musicmasterScreenshot from 'images/screenshots/musicmaster.png'
+// import expensifyScreenshot from 'images/screenshots/expensify.jpg'
+// import hairbyfranciscoScreenshot from 'images/screenshots/hairbyfrancisco.jpg'
+// import asoftodayScreenshot from 'images/screenshots/asoftoday.png'
+// import saccScreenshot from 'images/screenshots/sacc.png'
+// import chatScreenshot from 'images/screenshots/chat.png'
+// import yelpcampScreenshot from 'images/screenshots/yelpcamp.png'
+// import calculatorScreenshot from 'images/screenshots/calculator.png'
+// import seasonalScreenshot from 'images/screenshots/seasonal.png'
+// import tictactoeScreenshot from 'images/screenshots/tictactoe.png'
+// import colorconversionScreenshot from 'images/screenshots/colorconversion.png'
+// import kokolunchboxScreenshot from 'images/screenshots/kokolunchbox.png'
+// import {StaticImageData} from 'next/image'
+const colorGridScreenshot = '/images/screenshots/colorgrid.png'
+const quickcopyScreenshot = '/images/screenshots/quickcopy.png'
+const shimbergScreenshot = '/images/screenshots/shimberg.png'
+const clearinghouseScreenshot = '/images/screenshots/clearinghouse.png'
+const elderdataScreenshot = '/images/screenshots/elderdata.png'
+const distillrScreenshot = '/images/screenshots/distillr.png'
+const musicmasterScreenshot = '/images/screenshots/musicmaster.png'
+const expensifyScreenshot = '/images/screenshots/expensify.jpg'
+const hairbyfranciscoScreenshot = '/images/screenshots/hairbyfrancisco.jpg'
+const asoftodayScreenshot = '/images/screenshots/asoftoday.png'
+const saccScreenshot = '/images/screenshots/sacc.png'
+const chatScreenshot = '/images/screenshots/chat.png'
+const yelpcampScreenshot = '/images/screenshots/yelpcamp.png'
+const calculatorScreenshot = '/images/screenshots/calculator.png'
+const seasonalScreenshot = '/images/screenshots/seasonal.png'
+const tictactoeScreenshot = '/images/screenshots/tictactoe.png'
+const colorconversionScreenshot = '/images/screenshots/colorconversion.png'
+const kokolunchboxScreenshot = '/images/screenshots/kokolunchbox.png'
 export interface AppDetails {
   title: string
   style: {
@@ -28,7 +46,8 @@ export interface AppDetails {
   demoUrl: string
   githubUrl: string | null
   technologies: TechName[]
-  screenshot: StaticImageData
+  // screenshot: StaticImageData
+  screenshot: string
   description: string
   why: string
   coolFeature: string

@@ -69,7 +69,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
               key={appDetails.title}
               src={appDetails.screenshot}
               alt={`${appDetails.title} screenshot`}
-              layout="responsive"
+              layout="fill"
               priority
               quality={100}
             />
