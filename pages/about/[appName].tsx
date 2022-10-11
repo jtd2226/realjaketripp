@@ -42,14 +42,14 @@ export interface IAppInfoPageProps {
 const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
   const appDetails = Apps[appName]
   const {prevAppName, nextAppName} = getPrevAndNext(appName)
-
+  
   const {color, backgroundColor} = appDetails.style
   const btnStyle = {
     backgroundColor: color,
     color: backgroundColor,
     border: `2px solid ${backgroundColor}`,
     boxShadow: '0px 8px 15px rgba(0, 0, 0, 0.1)',
-
+    
     ':hover': {
       backgroundColor,
       color,
@@ -59,20 +59,14 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
       })}`,
     },
   }
+  const Image = appDetails.screenshot
   return (
     <div className="app-info">
       <div className="content-container">
         <h1 style={{color: backgroundColor}}>{appDetails.title}</h1>
         <div className="content">
           <div className="screenshot">
-            <Image
-              key={appDetails.title}
-              src={appDetails.screenshot}
-              alt={`${appDetails.title} screenshot`}
-              layout="fill"
-              priority
-              quality={100}
-            />
+            <Image title={appDetails.title} />
             <a href={appDetails.demoUrl}>
               <div className="gradient" />
             </a>
